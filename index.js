@@ -11,6 +11,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
 
 (async () => {
     const airdropList = await api.getAirdrop(env.auth)
+    if (!Array.isArray(airdropList)) return Error('failed fetch airdrop list!')
     airdropList.sort((a, b) => b.winnersListingDate - a.winnersListingDate)
     for (let i = 0; i < airdropList.length; i++) {
         const drop = airdropList[i];
