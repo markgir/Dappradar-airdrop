@@ -3,14 +3,12 @@ const db = require('./utils/db');
 const telegram = require('./utils/telegram');
 const caption = require('./utils/caption')
 const moment = require('moment-timezone')
-
 const env = require('./config')
 
-const isStarted = (startDate) => moment(startDate) < moment()
-const isEnded = (endDate) => moment(endDate) < moment()
-const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < moment()
+const isStarted = (startDate) => moment(startDate) < moment();
+const isEnded = (endDate) => moment(endDate) < moment();
+const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < moment();
 
-;
 (async () => {
     const airdropList = await api.getAirdrop(env.auth)
     airdropList.sort((a, b) => b.winnersListingDate - a.winnersListingDate)
