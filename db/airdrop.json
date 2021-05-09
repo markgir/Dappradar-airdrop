@@ -59,7 +59,8 @@
       "started": false,
       "ended": false,
       "winnerPicked": false,
-      "posted": false
+      "posted": true,
+      "msgId": 39
     },
     {
       "@id": "/airdrops/31",
