@@ -42,17 +42,5 @@ module.exports = {
     add,
     update,
     remove,
-    isExist,
+    isExist
 };
-
-// (async () => {
-//     try {
-//         const adds = await find({
-//         "id": 32,
-//         "msg_id": 12345
-//     })
-//     console.log(adds)
-//     } catch (error) {
-//         console.error(error);
-//     }
-// })()
