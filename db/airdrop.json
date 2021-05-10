@@ -88,8 +88,8 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 37
     },
@@ -119,8 +119,8 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 36
     },
@@ -150,8 +150,8 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 35
     },
@@ -181,8 +181,8 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 34
     },
@@ -212,8 +212,8 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 33
     },
@@ -243,8 +243,8 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 31
     },
