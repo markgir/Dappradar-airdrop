@@ -26,8 +26,8 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 38
     },
