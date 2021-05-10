@@ -107,3 +107,4 @@ dist
 #other
 *.code-workspace
 yarn.lock
+join.js

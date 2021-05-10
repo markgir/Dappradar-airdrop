@@ -24,8 +24,16 @@ const getAirdropParticipants = (authorization, id) => new Promise((resolve, reje
     .catch((err) => reject(err))
 )
 
+const getIdentity = (authorization) => new Promise((resolve, reject) =>
+fetch(`https://auth.dappradar.com/apiv4/users/identify`, defaultOptions(authorization))
+.then((response) => response.json())
+.then((result) => resolve(result))
+.catch((err) => reject(err))
+)
+
  module.exports = {
     getAirdrop,
-    getAirdropParticipants
+    getAirdropParticipants,
+    getIdentity
  };
  

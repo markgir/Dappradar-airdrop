@@ -32,8 +32,8 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             }
 
             if (!data.posted && !isStarted(data.startDate) && !isEnded(data.endDate)) {
-                const aDayBeforeEvent = moment(data.startDate).format('D') - 1 == moment().format('D');
-                if (aDayBeforeEvent) { // post new airdrop a day befor launch
+                const launchDay = moment(data.startDate).format('D') == moment().format('D');
+                if (launchDay) { // post new airdrop on launch day
                     console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner`)
                     const sendnews = await telegram.sendPost(data.featuredImgUrl, genCaption, inlineData)
                     if (!sendnews) return Error(sendnews);
@@ -46,11 +46,17 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             if (data.posted && isStarted(data.startDate) && !isEnded(data.endDate)) {
                 const updateNews = await telegram.updatePost(drop.msgId, inlineData)
                 if (updateNews) console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner`)
+                drop.posted = true
+                drop.started = true
+                await db.update(drop)
             }
 
-            if ((moment(data.endDate).format('D') + 2 == moment().format('D')) && isEnded(data.endDate)) {
+            if (data.posted && isStarted(data.startDate) && isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate)) {
                 const updateLast = await telegram.updatePost(drop.msgId, inlineData)
                 if (updateLast) console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner`)
+                drop.ended = true
+                drop.winnerPicked = true
+                await db.add(drop)
             }
         } else {
             drop.started = isStarted(drop.startDate)
