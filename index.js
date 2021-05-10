@@ -64,7 +64,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 await db.update(drop)
             }
 
-            if (data.posted && data.msgId && isStarted(data.startDate) && isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate)) {
+            if (drop.noUpdate && data.posted && data.msgId && isStarted(data.startDate) && isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate)) {
                 const updateLast = await telegram.updatePost(data.msgId, inlineData)
                 if (updateLast.ok) {
                     console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
@@ -73,6 +73,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 }
                 drop.ended = true
                 drop.winnerPicked = true
+                drop.noUpdate = true
                 await db.update(drop)
             }
         } else {
@@ -80,6 +81,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             drop.ended = isEnded(drop.endDate)
             drop.winnerPicked = isWinnerPicked(drop.winnersListingDate)
             drop.posted = false
+            drop.noUpdate = false
             await db.add(drop)
 
             if (isEnded(drop.endDate)) {
