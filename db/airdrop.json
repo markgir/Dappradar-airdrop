@@ -26,10 +26,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": true,
-      "winnerPicked": true,
+      "ended": false,
+      "winnerPicked": false,
       "posted": true,
-      "msgId": 37
+      "msgId": 38
     },
     {
       "@id": "/airdrops/33",
