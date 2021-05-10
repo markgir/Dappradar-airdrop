@@ -27,7 +27,7 @@
       ],
       "started": true,
       "ended": true,
-      "winnerPicked": false,
+      "winnerPicked": true,
       "posted": true,
       "msgId": 37
     },
