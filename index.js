@@ -11,14 +11,18 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
 
 (async () => {
     const airdropList = await api.getAirdrop(env.auth)
-    if (!Array.isArray(airdropList)) return Error('failed fetch airdrop list!')
+    if (!Array.isArray(airdropList)) return console.log('failed fetch airdrop list!')
     airdropList.sort((a, b) => b.winnersListingDate - a.winnersListingDate)
     for (let i = 0; i < airdropList.length; i++) {
         const drop = airdropList[i];
         delete drop.participants
-        const exist = await db.isExist({ id: drop.id })
+        const exist = await db.isExist({
+            id: drop.id
+        })
         if (exist) {
-            const data = await db.find({ id: drop.id })
+            const data = await db.find({
+                id: drop.id
+            })
             drop.started = isStarted(data.startDate)
             drop.ended = isEnded(data.endDate)
             drop.winnerPicked = isWinnerPicked(data.winnersListingDate)
@@ -36,9 +40,12 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             if (!data.posted && !isStarted(data.startDate) && !isEnded(data.endDate)) {
                 const launchDay = moment(data.startDate).format('D') == moment().format('D');
                 if (launchDay) { // post new airdrop on launch day
-                    console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
                     const sendnews = await telegram.sendPost(data.featuredImgUrl, genCaption, inlineData)
-                    if (!sendnews) return Error(sendnews);
+                    if (sendnews.ok) {
+                        console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
+                    } else {
+                        console.log(sendnews.description);
+                    }
                     drop.posted = true
                     drop.msgId = sendnews.result.message_id
                     await db.update(drop)
@@ -46,16 +53,24 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             }
 
             if (data.posted && isStarted(data.startDate) && !isEnded(data.endDate)) {
-                const updateNews = await telegram.updatePost(drop.msgId, inlineData)
-                if (updateNews) console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
+                const updateNews = await telegram.updatePost(data.msgId, inlineData)
+                if (updateNews.ok) {
+                    console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
+                } else {
+                    console.log(updateNews.description);
+                }
                 drop.posted = true
                 drop.started = true
                 await db.update(drop)
             }
 
-            if (data.posted && isStarted(data.startDate) && isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate)) {
-                const updateLast = await telegram.updatePost(drop.msgId, inlineData)
-                if (updateLast) console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
+            if (data.posted && data.msgId && isStarted(data.startDate) && isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate)) {
+                const updateLast = await telegram.updatePost(data.msgId, inlineData)
+                if (updateLast.ok) {
+                    console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
+                } else {
+                    console.log(updateLast.description);
+                }
                 drop.ended = true
                 drop.winnerPicked = true
                 await db.update(drop)
@@ -81,7 +96,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                     totalParticipants: await api.getAirdropParticipants(env.auth, drop.id)
                 }
                 const sendnews = await telegram.sendPost(drop.featuredImgUrl, genCaption, inlineData)
-                if (!sendnews) return Error(sendnews);
+                if (!sendnews) return console.log(sendnews);
                 drop.posted = true
                 drop.msgId = sendnews.result.message_id
                 await db.update(drop)
