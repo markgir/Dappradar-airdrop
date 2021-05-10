@@ -88,9 +88,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": true,
-      "winnerPicked": true,
-      "posted": false
+      "ended": false,
+      "winnerPicked": false,
+      "posted": true,
+      "msgId": 37
     },
     {
       "@id": "/airdrops/30",
@@ -118,9 +119,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": true,
-      "winnerPicked": true,
-      "posted": false
+      "ended": false,
+      "winnerPicked": false,
+      "posted": true,
+      "msgId": 36
     },
     {
       "@id": "/airdrops/29",
@@ -148,9 +150,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": true,
-      "winnerPicked": true,
-      "posted": false
+      "ended": false,
+      "winnerPicked": false,
+      "posted": true,
+      "msgId": 35
     },
     {
       "@id": "/airdrops/28",
@@ -178,9 +181,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": true,
-      "winnerPicked": true,
-      "posted": false
+      "ended": false,
+      "winnerPicked": false,
+      "posted": true,
+      "msgId": 34
     },
     {
       "@id": "/airdrops/27",
@@ -208,9 +212,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": true,
-      "winnerPicked": true,
-      "posted": false
+      "ended": false,
+      "winnerPicked": false,
+      "posted": true,
+      "msgId": 33
     },
     {
       "@id": "/airdrops/26",
@@ -238,9 +243,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": true,
-      "winnerPicked": true,
-      "posted": false
+      "ended": false,
+      "winnerPicked": false,
+      "posted": true,
+      "msgId": 31
     },
     {
       "@id": "/airdrops/25",
