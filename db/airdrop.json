@@ -705,6 +705,37 @@
       "ended": true,
       "winnerPicked": true,
       "posted": false
+    },
+    {
+      "@id": "/airdrops/34",
+      "@type": "http://schema.org/Airdrop",
+      "id": 34,
+      "title": "DVI Airdrop",
+      "shortDescription": "$5,000 worth of DVI tokens to 1000 lucky winners!",
+      "startDate": "2021-05-17T07:00:00+00:00",
+      "endDate": "2021-05-23T22:59:59+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/609e3211ca177_DVI-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/609e321e06e7d_DVI-icon.png",
+      "featuredImg": "/media_objects/36",
+      "airdropItemImg": "/media_objects/37",
+      "tokenAmount": 9680,
+      "tokenName": "DVI",
+      "aboutTitle": "Register now for a chance to win DVI",
+      "aboutText": "Dvision Network is a digital universe, powered by blockchain technology. It’s a digital environment where people can trade virtual goods and pay for services using DVI tokens. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/entering-the-metaverse-what-is-dvision-network\">Learn more</a>",
+      "winnersListingDate": "2021-05-24T09:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 1000,
+      "protocol": "eth",
+      "requirements": [
+        "Metamask Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
