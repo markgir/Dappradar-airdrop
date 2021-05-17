@@ -49,7 +49,7 @@
       "aboutTitle": "Register now for a chance to win free BAKE",
       "aboutText": "BakerySwap offers a range of DeFi services, along with a unique launchpad and non-fungible token NFT supermarket. Additionally, by providing liquidity to the BakerySwap protocol, users can earn BAKE rewards.\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-bakeryswap-and-how-does-it-work\">Learn more</a>",
       "winnersListingDate": "2021-05-16T09:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "bsc",
@@ -731,7 +731,7 @@
         "Metamask Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
