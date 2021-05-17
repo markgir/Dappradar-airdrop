@@ -64,7 +64,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 await db.update(drop)
             }
 
-            if (drop.noUpdate && data.posted && data.msgId && isStarted(data.startDate) && isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate)) {
+            if (!drop.noUpdate && data.posted && data.msgId && isStarted(data.startDate) && isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate)) {
                 const updateLast = await telegram.updatePost(data.msgId, inlineData)
                 if (updateLast.ok) {
                     console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`)
