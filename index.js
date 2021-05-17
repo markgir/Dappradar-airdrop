@@ -37,7 +37,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 const launchDay = moment(data.startDate).format('D') == moment().format('D');
                 if (launchDay) { // post new airdrop on launch day
                     telegram.sendPost(data.featuredImgUrl, genCaption, inlineData)
-                    .then((result) => {
+                    .then(async (result) => {
                         result.ok ? console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description);
                         drop.posted = true
                         drop.msgId = result.result.message_id
@@ -90,7 +90,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                     }
                     
                     telegram.sendPost(drop.featuredImgUrl, genCaption, inlineData)
-                    .then((result) => {
+                    .then(async (result) => {
                         result.ok ? console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner`) : console.log(result.description)
                         drop.posted = true
                         drop.msgId = result.result.message_id
