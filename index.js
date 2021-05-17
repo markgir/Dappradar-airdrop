@@ -46,26 +46,31 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 }
             }
 
-            if (!drop.noUpdate && data.posted && isStarted(data.startDate)) {
-                if (!isEnded(data.endDate)) {
-                    telegram.updatePost(data.msgId, inlineData)
-                    .then((result) => result.ok ? console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
-                    .catch((err) => console.error(err));
-                    drop.posted = true
-                    drop.started = true
-                    await db.update(drop)
-                } 
-                
-                if (isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate) && data.msgId) {
-                    telegram.updatePost(data.msgId, inlineData)
-                    .then((result) => result.ok ? console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
-                    .catch((err) => console.error(err));
-                    drop.ended = true
-                    drop.winnerPicked = true
-                    drop.noUpdate = true
-                    await db.update(drop)
+            if (data.posted && isStarted(data.startDate)) {
+                if (!drop.noUpdate) {
+                    if (!isEnded(data.endDate)) {
+                        telegram.updatePost(data.msgId, inlineData)
+                            .then((result) => result.ok ? console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
+                            .catch((err) => console.error(err));
+                        drop.posted = true
+                        drop.started = true
+                        await db.update(drop)
+                    }
+                } else {
+                    if (isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate) && data.msgId) {
+                        telegram.updatePost(data.msgId, inlineData)
+                            .then((result) => result.ok ? console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
+                            .catch((err) => console.error(err));
+                        drop.ended = true
+                        drop.winnerPicked = true
+                        drop.noUpdate = true
+                        await db.update(drop)
+                    }
                 }
             }
+                
+                
+            
         } else {
             drop.started = isStarted(drop.startDate)
             drop.ended = isEnded(drop.endDate)
