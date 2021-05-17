@@ -103,8 +103,9 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 drop.msgId = sendnews.result.message_id
                 await db.update(drop)
                 console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner`)
-            } else if (drop.posted && !isEnded(drop.endDate)) {
-
+            } else if (isStarted(drop.startDate) && isEnded(drop.endDate)) {
+                drop.noUpdate = true
+                await db.add(drop)
             }
         }
 
