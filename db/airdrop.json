@@ -737,6 +737,37 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 42
+    },
+    {
+      "@id": "/airdrops/35",
+      "@type": "http://schema.org/Airdrop",
+      "id": 35,
+      "title": "PANTHER airdrop",
+      "shortDescription": "$400 worth of PANTHER tokens to 100 lucky winners!",
+      "startDate": "2021-05-24T07:00:00+00:00",
+      "endDate": "2021-05-31T05:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60a76a814b06e_PANTHER-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60a76a954da6e_PANTHER-icon.png",
+      "featuredImg": "/media_objects/38",
+      "airdropItemImg": "/media_objects/39",
+      "tokenAmount": 280,
+      "tokenName": "PANTHER",
+      "aboutTitle": "Register now for a chance to win PANTHER",
+      "aboutText": "Cheaper and faster than Uniswap, PantherSwap is an automatic liquidity yield farm and token exchange on Binance Smart Chain. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-pantherswap-a-simple-explanation\">Learn more</a>",
+      "winnersListingDate": "2021-05-31T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
