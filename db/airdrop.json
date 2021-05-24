@@ -732,7 +732,7 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
+      "ended": true,
       "winnerPicked": false,
       "posted": true,
       "noUpdate": false,
@@ -766,8 +766,9 @@
       "started": false,
       "ended": false,
       "winnerPicked": false,
-      "posted": false,
-      "noUpdate": false
+      "posted": true,
+      "noUpdate": false,
+      "msgId": 45
     }
   ]
 }
