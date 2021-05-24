@@ -723,7 +723,7 @@
       "aboutTitle": "Register now for a chance to win DVI",
       "aboutText": "Dvision Network is a digital universe, powered by blockchain technology. It’s a digital environment where people can trade virtual goods and pay for services using DVI tokens. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/entering-the-metaverse-what-is-dvision-network\">Learn more</a>",
       "winnersListingDate": "2021-05-24T09:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 1000,
       "protocol": "eth",
@@ -733,7 +733,7 @@
       ],
       "started": true,
       "ended": true,
-      "winnerPicked": false,
+      "winnerPicked": true,
       "posted": true,
       "noUpdate": false,
       "msgId": 42
@@ -763,7 +763,7 @@
         "Binance Smart Chain Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
