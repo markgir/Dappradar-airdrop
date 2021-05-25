@@ -726,7 +726,7 @@
       "status": "winners_picked",
       "enabled": true,
       "winnersCount": 1000,
-      "protocol": "eth",
+      "protocol": "bsc",
       "requirements": [
         "Metamask Wallet",
         "E-mail address"
