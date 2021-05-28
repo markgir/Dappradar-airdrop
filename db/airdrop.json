@@ -769,6 +769,37 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 45
+    },
+    {
+      "@id": "/airdrops/36",
+      "@type": "http://schema.org/Airdrop",
+      "id": 36,
+      "title": "BELT Airdrop",
+      "shortDescription": "$400 worth of BELT tokens to 100 lucky winners!",
+      "startDate": "2021-05-31T07:00:00+00:00",
+      "endDate": "2021-06-08T05:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60afb4361df9b_BELT-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60afb449dc9cb_BELT-Icon.png",
+      "featuredImg": "/media_objects/40",
+      "airdropItemImg": "/media_objects/41",
+      "tokenAmount": 7,
+      "tokenName": "BELT",
+      "aboutTitle": "Register now for a chance to win BELT",
+      "aboutText": "Belt Finance is a multi-strategy yield optimization tool operating on Binance Smart Chain. Belt users do not need to actively move their assets around. Saving time, energy, and potential mistakes. \n \n<a target=\"_blank\" href=\"https://dappradar.com/blog/belt-finance-a-simple-explanation\">Learn more</a>",
+      "winnersListingDate": "2021-06-08T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
