@@ -755,7 +755,7 @@
       "aboutTitle": "Register now for a chance to win PANTHER",
       "aboutText": "Cheaper and faster than Uniswap, PantherSwap is an automatic liquidity yield farm and token exchange on Binance Smart Chain. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-pantherswap-a-simple-explanation\">Learn more</a>\n\n*PANTHER value as of May 21 ($1.45). Individual winners to receive 2.8 PANTHER.",
       "winnersListingDate": "2021-05-31T12:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "bsc",
@@ -765,7 +765,7 @@
       ],
       "started": true,
       "ended": true,
-      "winnerPicked": false,
+      "winnerPicked": true,
       "posted": true,
       "noUpdate": false,
       "msgId": 45
