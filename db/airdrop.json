@@ -786,7 +786,7 @@
       "tokenName": "BELT",
       "aboutTitle": "Register now for a chance to win BELT",
       "aboutText": "Belt Finance is a multi-strategy yield optimization tool operating on Binance Smart Chain. Belt users do not need to actively move their assets around. Saving time, energy, and potential mistakes. \n \n<a target=\"_blank\" href=\"https://dappradar.com/blog/belt-finance-a-simple-explanation\">Learn more</a>",
-      "winnersListingDate": "2021-06-08T12:00:00+00:00",
+      "winnersListingDate": "2021-06-08T10:00:00+00:00",
       "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
@@ -797,9 +797,9 @@
       ],
       "started": true,
       "ended": true,
-      "winnerPicked": false,
+      "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 49
     },
     {
