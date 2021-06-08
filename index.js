@@ -47,7 +47,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             }
 
             if (data.posted && isStarted(data.startDate)) {
-                if (!drop.noUpdate) {
+                if (!data.noUpdate) {
                     if (!isEnded(data.endDate)) {
                         telegram.updatePost(data.msgId, inlineData)
                             .then((result) => result.ok ? console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
@@ -55,9 +55,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                         drop.posted = true
                         drop.started = true
                         await db.update(drop)
-                    }
-                } else {
-                    if (isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate) && data.msgId) {
+                    } else if (isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate) && data.msgId) {
                         telegram.updatePost(data.msgId, inlineData)
                             .then((result) => result.ok ? console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
                             .catch((err) => console.error(err));
