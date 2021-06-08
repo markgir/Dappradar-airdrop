@@ -735,7 +735,7 @@
       "ended": true,
       "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 42
     },
     {
@@ -767,7 +767,7 @@
       "ended": true,
       "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 45
     },
     {
@@ -827,7 +827,7 @@
         "Binance Smart Chain Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
