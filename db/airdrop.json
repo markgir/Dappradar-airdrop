@@ -833,6 +833,37 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 51
+    },
+    {
+      "@id": "/airdrops/38",
+      "@type": "http://schema.org/Airdrop",
+      "id": 38,
+      "title": "ApeSwap’s NFAs airdrop",
+      "shortDescription": "Get your hands on one of ApeSwap's ultra-rare NFAs!",
+      "startDate": "2021-06-21T07:00:00+00:00",
+      "endDate": "2021-06-28T05:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60cca196db386_NFA-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60cca1bcb930d_NFA-icon.png",
+      "featuredImg": "/media_objects/44",
+      "airdropItemImg": "/media_objects/45",
+      "tokenAmount": 15,
+      "tokenName": "NFA",
+      "aboutTitle": "Register now for a chance to win a ApeSwap NFA",
+      "aboutText": "Get your hands on one of the Non Fungible Apes! This collection of 1,000 cryptographically generated digital apes on Binance Smart Chain can be implemented into the ApeSwap. Finance interface and have future utility. \n\nDappRadar is airdropping some of these awesome Apes, each of them being an ideal long term hold for NFT collectors!  \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/an-explanation-what-are-the-apeswap-nfas\">Learn more</a>",
+      "winnersListingDate": "2021-06-28T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 15,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
