@@ -819,7 +819,7 @@
       "aboutTitle": "Register now for a chance to win a MOBOX NFT",
       "aboutText": "MOBOX is a leading platform that combines the best of yield farming DeFi with Gaming NFTs. In collaboration with MOBOX DappRadar is airdropping some MOBOX Key Tokens that unlock the beautiful MOMO NFTS!\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/mobox-combines-gaming-with-yield-farming-and-nfts\">Learn more</a>",
       "winnersListingDate": "2021-06-21T12:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 300,
       "protocol": "bsc",
@@ -829,9 +829,9 @@
       ],
       "started": true,
       "ended": true,
-      "winnerPicked": false,
+      "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 51
     },
     {
