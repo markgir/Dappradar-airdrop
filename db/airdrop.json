@@ -865,6 +865,37 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 54
+    },
+    {
+      "@id": "/airdrops/39",
+      "@type": "http://schema.org/Airdrop",
+      "id": 39,
+      "title": "ACS airdrop",
+      "shortDescription": "590 ACS tokens to 1000 lucky winners!",
+      "startDate": "2021-06-28T07:00:00+00:00",
+      "endDate": "2021-07-12T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60d5e197b7be6_ACS -banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60d5e1aa47069_ACS-icon.png",
+      "featuredImg": "/media_objects/46",
+      "airdropItemImg": "/media_objects/47",
+      "tokenAmount": 590,
+      "tokenName": "ACS",
+      "aboutTitle": "Register now for a chance to win free ACS",
+      "aboutText": "Join this airdrop for ACryptoS and become one of the 1,000 lucky ones to receive 0.59 ACS tokens. These tokens can earn you up to 400% APY on the ACryptoS platform, and other DeFi farms.\n\nStake your ACS in the Vault and get up to a 2.5x APY yield boost on all farms. In addition you earn passive income from fees, and these tokens provide voting power in governance of the protocol.\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-acryptos-a-simple-explanation-2/\">Learn more about ACryptoS</a>",
+      "winnersListingDate": "2021-07-12T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 1000,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
