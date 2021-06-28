@@ -851,7 +851,7 @@
       "aboutTitle": "Register now for a chance to win a ApeSwap NFA",
       "aboutText": "Get your hands on one of the Non Fungible Apes! This collection of 1,000 cryptographically generated digital apes on Binance Smart Chain can be implemented into the ApeSwap. Finance interface and have future utility. \n\nDappRadar is airdropping some of these awesome Apes, each of them being an ideal long term hold for NFT collectors!  \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/an-explanation-what-are-the-apeswap-nfas\">Learn more</a>",
       "winnersListingDate": "2021-06-28T12:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 15,
       "protocol": "bsc",
