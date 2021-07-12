@@ -882,7 +882,7 @@
       "tokenName": "ACS",
       "aboutTitle": "Register now for a chance to win free ACS",
       "aboutText": "Join this airdrop for ACryptoS and become one of the 1,000 lucky ones to receive 0.59 ACS tokens. These tokens can earn you up to 400% APY on the ACryptoS platform, and other DeFi farms.\n\nStake your ACS in the Vault and get up to a 2.5x APY yield boost on all farms. In addition you earn passive income from fees, and these tokens provide voting power in governance of the protocol.\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-acryptos-a-simple-explanation-2/\">Learn more about ACryptoS</a>",
-      "winnersListingDate": "2021-07-12T12:00:00+00:00",
+      "winnersListingDate": "2021-07-12T08:00:00+00:00",
       "status": "winners_picked",
       "enabled": true,
       "winnersCount": 1000,
@@ -893,9 +893,9 @@
       ],
       "started": true,
       "ended": true,
-      "winnerPicked": false,
+      "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 56
     },
     {
