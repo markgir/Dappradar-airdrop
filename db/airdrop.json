@@ -883,7 +883,7 @@
       "aboutTitle": "Register now for a chance to win free ACS",
       "aboutText": "Join this airdrop for ACryptoS and become one of the 1,000 lucky ones to receive 0.59 ACS tokens. These tokens can earn you up to 400% APY on the ACryptoS platform, and other DeFi farms.\n\nStake your ACS in the Vault and get up to a 2.5x APY yield boost on all farms. In addition you earn passive income from fees, and these tokens provide voting power in governance of the protocol.\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-acryptos-a-simple-explanation-2/\">Learn more about ACryptoS</a>",
       "winnersListingDate": "2021-07-12T12:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 1000,
       "protocol": "bsc",
@@ -892,11 +892,43 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
+      "ended": true,
       "winnerPicked": false,
       "posted": true,
       "noUpdate": false,
       "msgId": 56
+    },
+    {
+      "@id": "/airdrops/40",
+      "@type": "http://schema.org/Airdrop",
+      "id": 40,
+      "title": "MATIC airdrop",
+      "shortDescription": "$400 worth of MATIC tokens to 100 lucky winners!",
+      "startDate": "2021-07-12T07:00:00+00:00",
+      "endDate": "2021-07-19T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60ebd867de29d_MATIC-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60ebd876471e6_MATIC-icon.png",
+      "featuredImg": "/media_objects/49",
+      "airdropItemImg": "/media_objects/50",
+      "tokenAmount": 390,
+      "tokenName": "MATIC",
+      "aboutTitle": "Register now for a chance to win free MATIC tokens, one of the best performing tokens of 2021.",
+      "aboutText": "The Matic Network, now known as Polygon is a platform designed for Ethereum scaling and infrastructure development. This Layer 2 scaling solution is already used by many projects such as ApeSwap, Aavegotchi, Cometh, Neon District, and Arkane Network.\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-polygon-a-simple-explanation\">Learn more</a>",
+      "winnersListingDate": "2021-07-19T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "eth",
+      "requirements": [
+        "Ethereum Wallet",
+        "E-mail address"
+      ],
+      "started": true,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": true,
+      "noUpdate": false,
+      "msgId": 58
     }
   ]
 }
