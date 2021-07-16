@@ -929,6 +929,37 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 58
+    },
+    {
+      "@id": "/airdrops/41",
+      "@type": "http://schema.org/Airdrop",
+      "id": 41,
+      "title": "Axie Infinity SLP Airdrop",
+      "shortDescription": "$400 worth of SLP tokens to 100 lucky winners!",
+      "startDate": "2021-07-19T07:00:00+00:00",
+      "endDate": "2021-07-26T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60f1457af367e_SLP-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60f145856899b_SLP-icon.png",
+      "featuredImg": "/media_objects/51",
+      "airdropItemImg": "/media_objects/52",
+      "tokenAmount": 1500,
+      "tokenName": "SLP",
+      "aboutTitle": "Register now for a chance to win free SLP tokens to use in the hottest blockchain game this year. ",
+      "aboutText": "SLP is an uncapped utility token that can be utilized within the game to breed new Axies. The token can either be mined through playing Axie Infinity, bought via Uniswap, or earned. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/explained-axie-infinity-slp-and-axs-tokens\">Learn more</a>",
+      "winnersListingDate": "2021-07-26T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "eth",
+      "requirements": [
+        "Ethereum Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
