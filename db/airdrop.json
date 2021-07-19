@@ -924,7 +924,7 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
+      "ended": true,
       "winnerPicked": false,
       "posted": true,
       "noUpdate": false,
@@ -955,7 +955,7 @@
         "Ethereum Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
