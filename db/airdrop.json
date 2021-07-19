@@ -915,7 +915,7 @@
       "aboutTitle": "Register now for a chance to win free MATIC tokens, one of the best performing tokens of 2021.",
       "aboutText": "The Matic Network, now known as Polygon is a platform designed for Ethereum scaling and infrastructure development. This Layer 2 scaling solution is already used by many projects such as ApeSwap, Aavegotchi, Cometh, Neon District, and Arkane Network.\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-polygon-a-simple-explanation\">Learn more</a>",
       "winnersListingDate": "2021-07-19T12:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "eth",
