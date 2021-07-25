@@ -961,6 +961,37 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 60
+    },
+    {
+      "@id": "/airdrops/42",
+      "@type": "http://schema.org/Airdrop",
+      "id": 42,
+      "title": "DPET airdrop",
+      "shortDescription": "$400 worth of DPET tokens to 100 lucky winners!",
+      "startDate": "2021-07-26T07:00:00+00:00",
+      "endDate": "2021-08-02T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60fc26d5c1da4_DPET-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/60fc26f46da7a_DPET-icon.png",
+      "featuredImg": "/media_objects/53",
+      "airdropItemImg": "/media_objects/54",
+      "tokenAmount": 63,
+      "tokenName": "DPET",
+      "aboutTitle": "Register now for a chance to win free DPET tokens",
+      "aboutText": "My Defi Pet is a virtual pet game that combines DeFi with NFT collectibles. Players can earn rewards, and use DPET tokens to improve their pets or trade with others. Also when you don't play, token holders can stake their DPET tokens for rewards or participate in governance decisions. My Defi Pet combines elements of famous monster-catching games with decentralized finance, all coming together on Binance Smart Chain. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/evolve-my-defi-pets-with-dpet-tokens\">Learn more</a>",
+      "winnersListingDate": "2021-08-02T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
