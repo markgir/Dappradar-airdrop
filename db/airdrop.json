@@ -977,7 +977,7 @@
       "aboutTitle": "Register now for a chance to win free SLP tokens to use in the hottest blockchain game this year. ",
       "aboutText": "SLP is an uncapped utility token that can be utilized within the game to breed new Axies. The token can either be mined through playing Axie Infinity, bought via Uniswap, or earned. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/explained-axie-infinity-slp-and-axs-tokens\">Learn more</a>",
       "winnersListingDate": "2021-07-26T12:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "eth",
