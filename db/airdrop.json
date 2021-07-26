@@ -30,7 +30,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 38,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/33",
@@ -62,7 +63,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 39,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/31",
@@ -94,7 +96,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 37,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/30",
@@ -126,7 +129,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 36,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/29",
@@ -158,7 +162,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 35,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/28",
@@ -190,7 +195,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 34,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/27",
@@ -222,7 +228,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 33,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/26",
@@ -254,7 +261,8 @@
       "winnerPicked": true,
       "posted": true,
       "msgId": 31,
-      "noUpdate": true
+      "noUpdate": true,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/25",
@@ -284,7 +292,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/24",
@@ -314,7 +323,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/23",
@@ -344,7 +354,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/22",
@@ -374,7 +385,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/21",
@@ -404,7 +416,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/20",
@@ -434,7 +447,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/19",
@@ -464,7 +478,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/18",
@@ -494,7 +509,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/12",
@@ -524,7 +540,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/11",
@@ -554,7 +571,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/13",
@@ -584,7 +602,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/9",
@@ -614,7 +633,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/10",
@@ -644,7 +664,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/15",
@@ -674,7 +695,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/8",
@@ -704,7 +726,8 @@
       "started": true,
       "ended": true,
       "winnerPicked": true,
-      "posted": false
+      "posted": false,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/34",
@@ -736,7 +759,8 @@
       "winnerPicked": true,
       "posted": true,
       "noUpdate": true,
-      "msgId": 42
+      "msgId": 42,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/35",
@@ -768,7 +792,8 @@
       "winnerPicked": true,
       "posted": true,
       "noUpdate": true,
-      "msgId": 45
+      "msgId": 45,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/36",
@@ -800,7 +825,8 @@
       "winnerPicked": true,
       "posted": true,
       "noUpdate": true,
-      "msgId": 49
+      "msgId": 49,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/37",
@@ -832,7 +858,8 @@
       "winnerPicked": true,
       "posted": true,
       "noUpdate": true,
-      "msgId": 51
+      "msgId": 51,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/38",
@@ -864,7 +891,8 @@
       "winnerPicked": true,
       "posted": true,
       "noUpdate": true,
-      "msgId": 54
+      "msgId": 54,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/39",
@@ -896,7 +924,8 @@
       "winnerPicked": true,
       "posted": true,
       "noUpdate": true,
-      "msgId": 56
+      "msgId": 56,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/40",
@@ -928,7 +957,8 @@
       "winnerPicked": true,
       "posted": true,
       "noUpdate": true,
-      "msgId": 58
+      "msgId": 58,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/41",
@@ -956,11 +986,12 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
+      "ended": true,
       "winnerPicked": false,
       "posted": true,
       "noUpdate": false,
-      "msgId": 60
+      "msgId": 60,
+      "amountTitle": null
     },
     {
       "@id": "/airdrops/42",
@@ -987,12 +1018,13 @@
         "Binance Smart Chain Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
       "noUpdate": false,
-      "msgId": 61
+      "msgId": 61,
+      "amountTitle": null
     }
   ]
 }
