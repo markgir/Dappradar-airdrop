@@ -97,7 +97,7 @@
       "posted": true,
       "msgId": 37,
       "noUpdate": true,
-      "amountTitle": null
+      "amountTitle": "$15 of BANANA token per winner"
     },
     {
       "@id": "/airdrops/30",
@@ -826,7 +826,7 @@
       "posted": true,
       "noUpdate": true,
       "msgId": 49,
-      "amountTitle": null
+      "amountTitle": "$4 of BELT token per winner"
     },
     {
       "@id": "/airdrops/37",
@@ -958,7 +958,7 @@
       "posted": true,
       "noUpdate": true,
       "msgId": 58,
-      "amountTitle": null
+      "amountTitle": "$4 of MATIC token per winner"
     },
     {
       "@id": "/airdrops/41",
@@ -987,11 +987,11 @@
       ],
       "started": true,
       "ended": true,
-      "winnerPicked": false,
+      "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 60,
-      "amountTitle": null
+      "amountTitle": "$4 of SLP token per winner"
     },
     {
       "@id": "/airdrops/42",
@@ -1024,7 +1024,7 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 61,
-      "amountTitle": null
+      "amountTitle": "$4 of DPET token per winner"
     }
   ]
 }
