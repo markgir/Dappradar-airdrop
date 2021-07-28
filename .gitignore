@@ -104,7 +104,17 @@ dist
 # TernJS port file
 .tern-port
 
-#other
+# other
 *.code-workspace
 yarn.lock
+
+# Private script 
 join.js
+creator.js
+cair.js
+
+# User DB
+db/user.json
+
+# User utils
+utils/user.js

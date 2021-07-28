@@ -3,14 +3,14 @@ const db = require('./utils/db');
 const telegram = require('./utils/telegram');
 const caption = require('./utils/caption')
 const moment = require('moment-timezone')
-const env = require('./config')
+const config = require('./config')
 
 const isStarted = (startDate) => moment(startDate) < moment();
 const isEnded = (endDate) => moment(endDate) < moment();
 const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < moment();
 
 (async () => {
-    const airdropList = await api.getAirdrop(env.auth)
+    const airdropList = await api.getAirdrop(config.auth)
     if (!Array.isArray(airdropList)) return console.log('failed fetch airdrop list!')
     airdropList.sort((a, b) => b.winnersListingDate - a.winnersListingDate)
     for (let i = 0; i < airdropList.length; i++) {
@@ -25,12 +25,12 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             await db.update(drop)
 
             let genCaption = caption(drop)
-            let dropParticipations = await api.getAirdropParticipants(env.auth, drop.id)
+            let dropParticipants = await api.getTotalAirdropParticipants(config.auth, drop.id)
             let eventStatus = isStarted(data.startDate) ? isEnded(data.endDate) ? isWinnerPicked(data.winnersListingDate) ? 'Event has ended, check winners list' : 'Event has ended, picking winner...' : 'Join now!' : 'Be patient, event not yet started!'
             const inlineData = {
                 id: drop.id,
                 status: eventStatus,
-                totalParticipants: dropParticipations
+                totalParticipants: dropParticipants
             }
 
             if (!data.posted && !isStarted(data.startDate) && !isEnded(data.endDate)) {
@@ -66,9 +66,6 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                     }
                 }
             }
-                
-                
-            
         } else {
             drop.started = isStarted(drop.startDate)
             drop.ended = isEnded(drop.endDate)
@@ -89,7 +86,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                     const inlineData = {
                         id: drop.id,
                         status: isStarted(drop.startDate) ? isEnded(drop.endDate) ? isWinnerPicked(drop.winnersListingDate) ? 'Event has ended, check winners list' : 'Event has ended, picking winner...' : 'Join now!' : 'Be patient, event not yet started!',
-                        totalParticipants: await api.getAirdropParticipants(env.auth, drop.id)
+                        totalParticipants: await api.getTotalAirdropParticipants(config.auth, drop.id)
                     }
                     
                     telegram.sendPost(drop.featuredImgUrl, genCaption, inlineData)

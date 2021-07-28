@@ -1,46 +1,47 @@
-const low = require('lowdb')
-const path = require('path')
-const FileSync = require('lowdb/adapters/FileSync')
-const adapter = new FileSync(path.join(__dirname, `../db/airdrop.json`))
-const db = low(adapter)
+/* eslint-disable no-promise-executor-return */
+const low = require('lowdb');
+const path = require('path');
+const FileSync = require('lowdb/adapters/FileSync');
+const adapter = new FileSync(path.join(__dirname, '../db/airdrop.json'));
+const db = low(adapter);
 
 db.defaults({ data: [] }).write();
 
-const get = () => db.get('data').value()
+const get = () => db.get('data').value();
 
-const find = (obj) => db.get('data').find(obj).value()
+const find = (obj) => db.get('data').find(obj).value();
 
-const isExist = (obj) => db.get('data').some(obj).value()
+const isExist = (obj) => db.get('data').some(obj).value();
 
 const add = (obj) => new Promise((resolve, reject) => {
-    const find = isExist({id: obj.id})
-    if (find) return reject('Already Exist')
-    const insert = db.get('data').push(obj).write()
-    if (!insert) return reject(insert)
+    const exist = isExist({ id: obj.id });
+    if (exist) return reject('Already Exist');
+    const insert = db.get('data').push(obj).write();
+    if (!insert) return reject(insert);
     resolve(insert)
 });
 
 const update = (obj) => new Promise((resolve, reject) => {
-    const find = isExist({id: obj.id})
-    if (!find) return reject('Data Not Found')
-    const update = db.get('data').find({id: obj.id}).assign(obj).write()
-    if (!update) return reject(update)
-    resolve(update)
+    const exist = isExist({ id: obj.id });
+    if (!exist) return reject('Data Not Found');
+    const assign = db.get('data').find({ id: obj.id }).assign(obj).write();
+    if (!assign) return reject(assign);
+    resolve(assign)
 });
 
 const remove = (obj) => new Promise((resolve, reject) => {
-    const find = isExist({id: obj.id})
-    if (!find) return reject('Data Not Found')
-    const remove = db.get('data').remove(obj).write()
-    if (!remove) return reject(remove)
-    return resolve(remove)
+    const exist = isExist({ id: obj.id });
+    if (!exist) return reject('Data Not Found');
+    const removes = db.get('data').remove(obj).write();
+    if (!removes) return reject(removes);
+    resolve(removes)
 });
 
 module.exports = {
-    get,
-    find,
     add,
-    update,
+    find,
+    get,
+    isExist,
     remove,
-    isExist
+    update
 };
