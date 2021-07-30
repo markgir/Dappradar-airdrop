@@ -1025,6 +1025,38 @@
       "noUpdate": false,
       "msgId": 61,
       "amountTitle": "$4 of DPET token per winner"
+    },
+    {
+      "@id": "/airdrops/43",
+      "@type": "http://schema.org/Airdrop",
+      "id": 43,
+      "title": "MANA airdrop",
+      "amountTitle": "$4 of MANA token per winner",
+      "shortDescription": "$400 worth of MANA tokens to 100 lucky winners!",
+      "startDate": "2021-08-02T07:00:00+00:00",
+      "endDate": "2021-08-09T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/6103b6118a8d4_MANA-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/6103b625b0d9e_MANA-icon.png",
+      "featuredImg": "/media_objects/55",
+      "airdropItemImg": "/media_objects/56",
+      "tokenAmount": 565,
+      "tokenName": "MANA",
+      "aboutTitle": "Register now for a chance to win free MANA tokens",
+      "aboutText": "The premier virtual world of Decentraland is accessible through any desktop browser, as long as you connect a Web3 wallet like Metamask. With the world of Decentraland, the MANA token is key. You need MANA to buy land in the world, but also to acquire digital fashion or participate in games. The MANA token is governance by the community, and Decentraland run through a DAO. Decentraland is one of the most decentralized, big-scale gaming projects on the market, and you will need MANA to be a part of it. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/explained-decentraland-mana-token\">Learn more</a>",
+      "winnersListingDate": "2021-08-09T12:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "eth",
+      "requirements": [
+        "Ethereum Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
