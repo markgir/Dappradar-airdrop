@@ -14,6 +14,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
     const airdropList = await api.getAirdrop(config.auth)
     if (!Array.isArray(airdropList)) return console.log('failed fetch airdrop list!')
     airdropList.sort((a, b) => b.winnersListingDate - a.winnersListingDate)
+    console.log('[>] Processing data...')
     for (let i = 0; i < airdropList.length; i++) {
         const drop = airdropList[i];
         delete drop.participants
@@ -24,7 +25,6 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             drop.ended = isEnded(data.endDate)
             drop.winnerPicked = isWinnerPicked(data.winnersListingDate)
             await db.update(drop)
-            console.log('[>] Processing participants data...')
             let genCaption = caption(drop)
             let dropParticipants = await api.getTotalAirdropParticipants(config.auth, drop.id)
             let eventStatus = isStarted(data.startDate) ? isEnded(data.endDate) ? isWinnerPicked(data.winnersListingDate) ? 'Event has ended, check winners list' : 'Event has ended, picking winner...' : 'Join now!' : 'Be patient, event not yet started!'
@@ -33,7 +33,6 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 status: eventStatus,
                 totalParticipants: dropParticipants
             }
-            console.log('[>] Processing airdrop data...')
             if (!data.posted && !isStarted(data.startDate) && !isEnded(data.endDate)) {
                 const launchDay = moment(data.startDate).format('D') == moment().format('D');
                 if (launchDay) { // post new airdrop on launch day
