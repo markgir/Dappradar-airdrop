@@ -10,6 +10,7 @@ const isEnded = (endDate) => moment(endDate) < moment();
 const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < moment();
 
 (async () => {
+    console.log('[>] Get Airdrop data...')
     const airdropList = await api.getAirdrop(config.auth)
     if (!Array.isArray(airdropList)) return console.log('failed fetch airdrop list!')
     airdropList.sort((a, b) => b.winnersListingDate - a.winnersListingDate)
@@ -23,7 +24,7 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
             drop.ended = isEnded(data.endDate)
             drop.winnerPicked = isWinnerPicked(data.winnersListingDate)
             await db.update(drop)
-
+            console.log('[>] Processing participants data...')
             let genCaption = caption(drop)
             let dropParticipants = await api.getTotalAirdropParticipants(config.auth, drop.id)
             let eventStatus = isStarted(data.startDate) ? isEnded(data.endDate) ? isWinnerPicked(data.winnersListingDate) ? 'Event has ended, check winners list' : 'Event has ended, picking winner...' : 'Join now!' : 'Be patient, event not yet started!'
@@ -32,13 +33,13 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 status: eventStatus,
                 totalParticipants: dropParticipants
             }
-
+            console.log('[>] Processing airdrop data...')
             if (!data.posted && !isStarted(data.startDate) && !isEnded(data.endDate)) {
                 const launchDay = moment(data.startDate).format('D') == moment().format('D');
                 if (launchDay) { // post new airdrop on launch day
                     telegram.sendPost(data.featuredImgUrl, genCaption, inlineData)
                     .then(async (result) => {
-                        result.ok ? console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description);
+                        result.ok ? console.log(`[POST] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus} | Participants: ${dropParticipants}`) : console.log(result.description);
                         drop.posted = true
                         drop.msgId = result.result.message_id
                         await db.update(drop)
@@ -50,14 +51,14 @@ const isWinnerPicked = (winnersListingDate) => moment(winnersListingDate) < mome
                 if (!data.noUpdate) {
                     if (!isEnded(data.endDate)) {
                         telegram.updatePost(data.msgId, inlineData)
-                            .then((result) => result.ok ? console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
+                            .then((result) => result.ok ? console.log(`[UPDATE] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus} | Participants: ${dropParticipants}`) : console.log(result.description))
                             .catch((err) => console.error(err));
                         drop.posted = true
                         drop.started = true
                         await db.update(drop)
                     } else if (isEnded(data.endDate) && isWinnerPicked(data.winnersListingDate) && data.msgId) {
                         telegram.updatePost(data.msgId, inlineData)
-                            .then((result) => result.ok ? console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus}`) : console.log(result.description))
+                            .then((result) => result.ok ? console.log(`[Last] ${drop.id}. ${drop.title} | ${drop.tokenAmount / drop.winnersCount} ${drop.tokenName} For ${drop.winnersCount} Winner | ${eventStatus} | Participants: ${dropParticipants}`) : console.log(result.description))
                             .catch((err) => console.error(err));
                         drop.ended = true
                         drop.winnerPicked = true
