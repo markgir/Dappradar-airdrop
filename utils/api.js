@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const fetch = require('node-fetch');
 const rfetch = require('node-fetch-retry');
 const { between } = require('./string')
@@ -94,11 +95,14 @@ const register = (email, password) => fetch('https://auth.dappradar.com/apiv4/us
     .then((result) => result)
     .catch((err) => err) 
 
-const getEmails = (email) => rfetch('https://generator.email/inbox1/', mailGeneratorOptions(email))
+const getEmails = (email, retry) => rfetch('https://generator.email/inbox1/', mailGeneratorOptions(email))
         .then((res) => res.text())
         .then((text) => {
             const data = between('<a href="', '" style="display: block; text-align: center;', text);
-            if (!Array.isArray(data)) return getEmails(email)
+            console.log(`${retry === 1 ? `${retry}st` : retry === 2 ? `${retry}nd` : retry === 3 ? `${retry}rd` : `${retry}th`} try to get confirmation link...`)
+            if (retry) retry += 1
+            if (retry >= 10) return false
+            if (!Array.isArray(data)) return getEmails(email, retry)
 
             return data[1];
         })
