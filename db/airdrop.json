@@ -1058,6 +1058,38 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 63
+    },
+    {
+      "@id": "/airdrops/44",
+      "@type": "http://schema.org/Airdrop",
+      "id": 44,
+      "title": "Splinterlands SPS Airdrop",
+      "amountTitle": "$4 of SPS token per winner",
+      "shortDescription": "$400 worth of SPS to 100 lucky winners",
+      "startDate": "2021-08-09T07:00:00+00:00",
+      "endDate": "2021-08-16T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/610cf7018ca86_SPS-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/610cf70e87802_SPS-icon.png",
+      "featuredImg": "/media_objects/57",
+      "airdropItemImg": "/media_objects/58",
+      "tokenAmount": 1300,
+      "tokenName": "SPS",
+      "aboutTitle": "Register now for a chance to win free SPS tokens",
+      "aboutText": "SPS or SplinterShards is the governance token for Splinterlands, a trading card game on the Hive blockchain. Every gamer with a stake in the Splinterlands ecosystem gets a daily SPS reward for 365 days. \n\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-are-splintershards-also-known-as-sps-tokens\">LEARN MORE</a>",
+      "winnersListingDate": "2021-08-16T08:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
