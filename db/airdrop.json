@@ -1044,7 +1044,7 @@
       "aboutTitle": "Register now for a chance to win free MANA tokens",
       "aboutText": "The premier virtual world of Decentraland is accessible through any desktop browser, as long as you connect a Web3 wallet like Metamask. With the world of Decentraland, the MANA token is key. You need MANA to buy land in the world, but also to acquire digital fashion or participate in games. The MANA token is governance by the community, and Decentraland run through a DAO. Decentraland is one of the most decentralized, big-scale gaming projects on the market, and you will need MANA to be a part of it. \n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/explained-decentraland-mana-token\">Learn more</a>",
       "winnersListingDate": "2021-08-09T12:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "eth",
@@ -1053,7 +1053,7 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
+      "ended": true,
       "winnerPicked": false,
       "posted": true,
       "noUpdate": false,
@@ -1085,7 +1085,7 @@
         "Binance Smart Chain Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
