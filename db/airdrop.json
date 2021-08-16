@@ -1077,7 +1077,7 @@
       "aboutTitle": "Register now for a chance to win free SPS tokens",
       "aboutText": "SPS or SplinterShards is the governance token for Splinterlands, a trading card game on the Hive blockchain. Every gamer with a stake in the Splinterlands ecosystem gets a daily SPS reward for 365 days. \n\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-are-splintershards-also-known-as-sps-tokens\">LEARN MORE</a>",
       "winnersListingDate": "2021-08-16T08:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "bsc",
@@ -1086,10 +1086,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 66
     },
     {
@@ -1118,7 +1118,7 @@
         "Ethereum Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
