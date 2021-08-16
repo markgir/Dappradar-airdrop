@@ -1121,8 +1121,9 @@
       "started": false,
       "ended": false,
       "winnerPicked": false,
-      "posted": false,
-      "noUpdate": false
+      "posted": true,
+      "noUpdate": false,
+      "msgId": 67
     }
   ]
 }
