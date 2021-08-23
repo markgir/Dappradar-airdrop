@@ -40,7 +40,7 @@ const getAirdrop = (authorization) => rfetch('https://backoffice.dappradar.com/a
 const joinAirdrop = (authorization, id, wallet, email) => fetch('https://backoffice.dappradar.com/participants', defaultOptions('POST', `Bearer ${authorization}`, JSON.stringify({ 'airdrop': `/airdrops/${id}`, wallet, email })))
     .then((response) => response.json())
     .then((result) => result)
-    .catch((err) => console.error(err));
+    .catch((err) => err);
 
 const getTotalAirdropParticipants = (authorization, id) => fetch(`https://backoffice.dappradar.com/airdrops/${id}/participants`, defaultOptions('GET', `Bearer ${authorization}`))
     .then((response) => response.json())
@@ -50,7 +50,7 @@ const getTotalAirdropParticipants = (authorization, id) => fetch(`https://backof
 const getAirdropParticipants = (authorization, id, page = 1, itemsPerPage = 10000) => rfetch(`https://backoffice.dappradar.com/airdrops/${id}/participants?page=${page}&itemsPerPage=${itemsPerPage}`, defaultOptions('GET', `Bearer ${authorization}`))
     .then((response) => response.json())
     .then((result) => result)
-    .catch((err) => console.error(err));
+    .catch((err) => err);
 
 const getAirdropWinner = (authorization, id) => fetch(`https://backoffice.dappradar.com/airdrops/${id}/winners`, defaultOptions('GET', `Bearer ${authorization}`))
     .then((response) => response.json())
