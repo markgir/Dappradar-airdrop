@@ -1110,7 +1110,7 @@
       "aboutTitle": "Register now for a chance to win free GHST tokens",
       "aboutText": "Each Aavegotchi is an Ethereum based NFT, which is created using GHST tokens. Users spend GHST to create each Aavegotchi and each Aavegotchi will need to be backed with the interest-bearing aTokens that run the Aave dapp. In this way, each Aavegotchi is created with some inherent financial value.\n\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/aave-is-launching-its-aavegotchi-game\">Learn More</a>",
       "winnersListingDate": "2021-08-23T08:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "eth",
