@@ -1143,7 +1143,7 @@
       "aboutTitle": "Register now for a chance to win free RARE tokens",
       "aboutText": "SuperRare has been responsible for more than $90M in NFT art sales, sold by over 1,400 artists since launching in April 2018. The RARE curation token is part of a slew of upgrades that will see the platform add independently curated storefronts, the SuperRare DAO, and sovereign smart contracts that will allow creators to import artworks minted elsewhere.\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/nft-marketplace-superrare-drops-its-rare-token\">Learn More</a>",
       "winnersListingDate": "2021-08-30T08:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "eth",
@@ -1152,10 +1152,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 70
     },
     {
@@ -1184,7 +1184,7 @@
         "Ethereum Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
