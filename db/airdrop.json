@@ -1190,6 +1190,38 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 72
+    },
+    {
+      "@id": "/airdrops/48",
+      "@type": "http://schema.org/Airdrop",
+      "id": 48,
+      "title": "HoneyFarm MOON airdrop",
+      "amountTitle": "$10 of MOON token per winner",
+      "shortDescription": "$1000 worth of MOON to 100 lucky winners",
+      "startDate": "2021-09-06T07:00:00+00:00",
+      "endDate": "2021-09-13T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/61322c2a23768_MOON-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/61322c4bb0b5c_MOON-icon.png",
+      "featuredImg": "/media_objects/65",
+      "airdropItemImg": "/media_objects/66",
+      "tokenAmount": 1000,
+      "tokenName": "MOON",
+      "aboutTitle": "Register now for a chance to win free MOON tokens",
+      "aboutText": "HoneyFarm Finance is a layered yield farming project on Binance Smart Chain with some unique tokenomics. To celebrate the beginning of its third phase of activity and the launch of its MOON token were giving away $1000 worth of MOON! \n\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/what-is-honeyfarm-finance\">Learn More</a>",
+      "winnersListingDate": "2021-09-13T08:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
