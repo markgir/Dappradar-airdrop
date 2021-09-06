@@ -1176,7 +1176,7 @@
       "aboutTitle": "Register now for a chance to win free SAND tokens",
       "aboutText": "The Sandbox is a virtual world where players can build, own, and monetize their gaming experiences using SAND, the platform’s utility token. Players can create digital assets as NFTs, upload them to the marketplace, buy and sell them, and then drag-and-drop them to create game experiences with The Sandbox Game Maker.\n\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/explained-the-sandbox-sand-token\">Learn More</a>",
       "winnersListingDate": "2021-09-06T08:00:00+00:00",
-      "status": "pending",
+      "status": "winners_picked",
       "enabled": true,
       "winnersCount": 100,
       "protocol": "eth",
@@ -1185,10 +1185,10 @@
         "E-mail address"
       ],
       "started": true,
-      "ended": false,
-      "winnerPicked": false,
+      "ended": true,
+      "winnerPicked": true,
       "posted": true,
-      "noUpdate": false,
+      "noUpdate": true,
       "msgId": 72
     },
     {
@@ -1217,7 +1217,7 @@
         "Binance Smart Chain Wallet",
         "E-mail address"
       ],
-      "started": false,
+      "started": true,
       "ended": false,
       "winnerPicked": false,
       "posted": true,
