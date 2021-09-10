@@ -1223,6 +1223,38 @@
       "posted": true,
       "noUpdate": false,
       "msgId": 73
+    },
+    {
+      "@id": "/airdrops/49",
+      "@type": "http://schema.org/Airdrop",
+      "id": 49,
+      "title": "CryptoZoon ZOON airdrop",
+      "amountTitle": "$4 of ZOON token per winner",
+      "shortDescription": "$400 worth of ZOON to 100 lucky winners",
+      "startDate": "2021-09-13T07:00:00+00:00",
+      "endDate": "2021-09-20T06:00:00+00:00",
+      "featuredImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/613b63ff5b2fa_ZOON-banner.jpg",
+      "airdropItemImgUrl": "https://dashboard-assets.dappradar.com/document/airdrops/613b64145746a_ZOON-icon.png",
+      "featuredImg": "/media_objects/67",
+      "airdropItemImg": "/media_objects/68",
+      "tokenAmount": 1000,
+      "tokenName": "ZOON",
+      "aboutTitle": "Register now for a chance to win free ZOON tokens",
+      "aboutText": "Crypto Zoon is a play-to-earn platform that allows players to battle against each other with NFT-based characters. Winning battles rewards players with ZOON tokens, which can then be used to advance characters. Alternatively, players can exchange their ZOON token rewards on token swaps and later transfer them into fiat.\n\n\n<a target=\"_blank\" href=\"https://dappradar.com/blog/explained-crypto-zoons-zoon-token\">LEARN MORE</a>",
+      "winnersListingDate": "2021-09-20T08:00:00+00:00",
+      "status": "pending",
+      "enabled": true,
+      "winnersCount": 100,
+      "protocol": "bsc",
+      "requirements": [
+        "Binance Smart Chain Wallet",
+        "E-mail address"
+      ],
+      "started": false,
+      "ended": false,
+      "winnerPicked": false,
+      "posted": false,
+      "noUpdate": false
     }
   ]
 }
